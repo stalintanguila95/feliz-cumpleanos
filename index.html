@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feliz Cumpleaños</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial,sans-serif;
+}
+
+.tarjeta{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+h1{
+    color:#ff4081;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#ff4081;
+    color:white;
+    font-size:16px;
+}
+
+#mensaje{
+    display:none;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="tarjeta">
+
+<h1>🎂 Feliz Cumpleaños Maria 🎂</h1>
+
+<p>Tengo algo especial para ti...</p>
+
+<button onclick="mostrarMensaje()">
+Abrir ❤️
+</button>
+
+<div id="mensaje">
+    <h2>¡Que tengas un día maravilloso!</h2>
+    <p>
+        Gracias por ser una persona importante en mi vida.
+        Espero que todos tus sueños se cumplan.
+    </p>
+</div>
+
+</div>
+
+<script>
+
+function mostrarMensaje(){
+    document.getElementById("mensaje").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
